@@ -2,7 +2,7 @@ package com.demo.cloudserver.entity;
 
 import java.io.Serializable;
 
-public class Enrollment implements Serializable {
+public class EnrollmentInfo implements Serializable {
 
 	private int enrollment_id;
 	private int student_id;

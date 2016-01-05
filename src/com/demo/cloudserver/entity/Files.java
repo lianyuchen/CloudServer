@@ -2,7 +2,7 @@ package com.demo.cloudserver.entity;
 
 import java.io.Serializable;
 
-public class File implements Serializable {
+public class Files implements Serializable {
 
 	private int file_id;
 	private int classinfo_id;
