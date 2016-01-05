@@ -128,13 +128,13 @@ public class DBManager {
 		
 		//dbManager3.execUpdate(sql, "user13");
 		
-		String sql ="select * from student where student_name > ?";
+		String sql ="select * from student where student_name = ?";
 		
 		ResultSet rs = dbManager.execQuery(sql,"连雨辰");
 		
 		try {
-			if(rs.next()){
-				System.out.println(rs.getInt(1));
+			while(rs.next()){
+				System.out.println(rs.getInt(1) +  "-" + rs.getString(2) + "-" + rs.getString(3));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
